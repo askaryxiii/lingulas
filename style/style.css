@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Sankofa+Display&display=swap');
+
+.translatorCard>.headingDiv {
+    width: fit-content;
+}
+
+.translatorCard>.headingDiv>.heading {
+    font-family: "Sankofa Display", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.translatorCard>.textInputArea>#lang2 {
+    background-color: #1c1d1f;
+}
+
+select {
+    background-color: #1c1d1f;
+}
