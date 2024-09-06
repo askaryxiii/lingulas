@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/bootstrap.min.css">
-    <link rel="stylesheet" href="style/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/style.css" />
     <title>LINGULAS</title>
-</head>
+  </head>
 
-<body class="row bg-secondary d-flex justify-content-center align-items-center vh-100 w-100">
-    <div class="translatorCard bg-black col-4 py-4 d-flex flex-column align-items-center gap-4 rounded">
-        <div class="headingDiv rounded py-1 px-3">
-            <h1 class="heading text-white m-0">LINGULAS</h1>
+  <body
+    class="row bg-secondary d-flex justify-content-center align-items-center vh-100">
+    <div
+      class="translatorCard bg-black col-md-10 col-lg-5 col-sm-12 py-4 d-flex flex-column align-items-center gap-4 rounded">
+      <div class="headingDiv rounded py-1 px-3">
+        <h1 class="heading text-white m-0">LINGULAS</h1>
+      </div>
+      <div class="textInputArea d-flex gap-3">
+        <div
+          class="lang1Section w-50 d-flex flex-column gap-4 align-items-center">
+          <textarea
+            rows="10"
+            id="lang1"
+            class="bg-secondary border rounded text-white fw-bold p-3 w-100"></textarea>
+          <select
+            name="language1"
+            id="lang1Selector"
+            class="w-75 p-1 rounded text-white">
+            <option value="">Languages</option>
+          </select>
         </div>
-        <div class="textInputArea d-flex gap-3">
-            <div class="lang1Section d-flex flex-column gap-4 align-items-center">
-                <textarea cols="20" rows="10" id="lang1"
-                    class="bg-secondary border rounded text-white fw-bold p-3"></textarea>
-                <select name="language1" id="lang1Selector" class="w-75 p-1 rounded text-white">
-                    <option value="">Languages</option>
-                </select>
-            </div>
-            <div class="lang2Section d-flex flex-column gap-4 align-items-center">
-                <textarea disabled cols="20" rows="10" id="lang2"
-                    class=" border rounded text-white fw-bold p-3"></textarea>
-                <select name="language2" id="lang2Selector" class="w-75 p-1 rounded text-white">
-                    <option value="">Languages</option>
-                </select>
-            </div>
+        <div
+          class="lang2Section w-50 d-flex flex-column gap-4 align-items-center">
+          <textarea
+            disabled
+            rows="10"
+            id="lang2"
+            class="border rounded text-white fw-bold p-3 w-100"></textarea>
+          <select
+            name="language2"
+            id="lang2Selector"
+            class="w-75 p-1 rounded text-white">
+            <option value="">Languages</option>
+          </select>
         </div>
-        <h4 class="warningMessage text-danger fw-bold d-none">Please type something..</h4>
-        <button class="translateBtn btn btn-outline-primary">Translate</button>
+      </div>
+      <h4 class="warningMessage text-danger fw-bold d-none">
+        Please type something..
+      </h4>
+      <button class="translateBtn btn btn-outline-primary">Translate</button>
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/javascript.js"></script>
-</body>
-
+  </body>
 </html>
